@@ -7,12 +7,16 @@ import {
     NavLogo,
     NavLink,
     NavWrap,
-    MobileIcon
+    MobileIcon,
+    BtnWrap,
+    ResumeBtn,
+    Download,
+    A
 } from '../Navbar/NavbarElements';
 import { FaBars, } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 
-const Navbar = ({ toggle, toggleHome}) => {
+const Navbar = ({ toggle, toggleHome }) => {
     const [scrollNav, setScrollNav] = useState(false);
 
     const changeNav = () => {
@@ -28,8 +32,7 @@ const Navbar = ({ toggle, toggleHome}) => {
         window.addEventListener('scroll', changeNav);
     }, []);
 
-   
-
+ 
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>
@@ -46,8 +49,8 @@ const Navbar = ({ toggle, toggleHome}) => {
                         <NavMenu>
                             {[
                                 { to: 'home', title: "Home", },
-                                { to: 'about', title: "About" ,},
-                                { to: 'work', title: "Work" ,},
+                                { to: 'about', title: "About", },
+                                { to: 'work', title: "Work", },
                                 { to: 'contact', title: "Contact", },
 
                             ].map(({ to, title }) => (
@@ -67,6 +70,13 @@ const Navbar = ({ toggle, toggleHome}) => {
                             ))}
 
                         </NavMenu>
+                        <BtnWrap>
+                            <A href="https://drive.google.com/file/d/1Ka3nR1UJoi6ZTLGdluWeNp5FyXmq_Std/view" >
+                                <ResumeBtn>
+                                    Resume<Download />
+                                </ResumeBtn>
+                            </A>
+                        </BtnWrap>
                     </NavContainer>
                 </Nav>
             </IconContext.Provider>

@@ -1,16 +1,19 @@
-import React from 'react'
 
+import React from 'react'
+import { Button } from '../SecondaryButton';
 import {
     SidebarContainer,
     SideLogo,
     SideWrap,
     SideMenu,
     SideLinks,
-    CloseIcon
+    CloseIcon,
+    BtnWrap,
+    A
 } from '../Sidebar/SidebarElements';
 
-const Sidebar = ({ isOpen, toggle,}) => {
-   
+const Sidebar = ({ isOpen, toggle, }) => {
+
     return (
         <>
             <SidebarContainer isOpen={isOpen} onClick={toggle}>
@@ -31,7 +34,18 @@ const Sidebar = ({ isOpen, toggle,}) => {
                         <SideLinks to='contact' onClick={toggle}>
                             Contact
                         </SideLinks>
+                        <BtnWrap>
+                            <A href="https://drive.google.com/file/d/1Ka3nR1UJoi6ZTLGdluWeNp5FyXmq_Std/view" >
+                                <Button
+                                    fontBig={true}
+                                    fontWeight={true}
+                                >
+                                    Resume
+                                </Button>
+                            </A>
+                        </BtnWrap>
                     </SideMenu>
+
                 </SideWrap>
             </SidebarContainer>
         </>

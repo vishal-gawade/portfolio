@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
-// import {Link as LinkR} from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 
@@ -37,6 +36,7 @@ color: #00CED1;
 
 export const SideMenu = styled.ul`
 display: grid;
+place-items: center;
 grid-template-columns: 1fr;
 grid-template-rows: repeat( 6, 80px );
 text-align: center;
@@ -61,4 +61,13 @@ cursor: pointer;
 }
 `;
 
+export const BtnWrap = styled.div `
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+`
+export const A = styled.a`
+text-decoration: none;
+`
 

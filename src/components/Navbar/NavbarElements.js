@@ -1,6 +1,7 @@
 import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import styled from 'styled-components';
+import { HiOutlineDownload  } from 'react-icons/hi'
 
 export const Nav = styled.div`
 	background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
@@ -82,16 +83,52 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(ScrollLink)`
-	color: #fff;
-	font-size: 1rem;
-	font-weight: 500;
+	color:#fff;
+	display: flex;
+	align-items:center;
 	text-decoration: none;
+	padding-block: 1.8rem;
+	height: 100%;
 	cursor: pointer;
+
+	&.active {
+		border-bottom: 3px solid var(--cyan);
+	}
 
 	&:hover {
 		color: #00ced1;
 	}
-	&.active {
-		border-bottom: 3px solid var(--cyan);
-	}
 `;
+
+export const BtnWrap = styled.div `
+display: flex;
+align-items: center;
+height: 100%;
+`
+export const ResumeBtn = styled.button`
+display: flex;
+color:#fff;
+font-weight: 500;
+font-size: 1rem;
+background: transparent;
+align-items: center;
+padding: 10px 20px;
+border-radius: 50px;
+border: none;
+outline: none;
+cursor: pointer;
+
+&:hover{
+	background: var(--cyan);
+}
+@media screen and (max-width: 768px){
+	transition: 0.2s ease-in-out;
+	display:none;
+}
+`
+export const Download = styled( HiOutlineDownload ) ` 
+margin-left: 5px;
+`
+export const A = styled.a `
+text-decoration: none;
+`

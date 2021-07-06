@@ -28,13 +28,13 @@ const Footer = ({toggleHome}) => {
                         VG © {new Date().getFullYear()} All right reserved.
                     </WebsiteRight>
                     <SocialIcon>
-                        <SocialLink href="/" target="_blank" aria-label="Github">
+                        <SocialLink href="https://github.com/vishal-gawade" target="_blank" aria-label="Github">
                             <FaGithub />
                         </SocialLink >
-                        <SocialLink href="/" target="_blank" aria-label="Linkedin">
+                        <SocialLink href="https://www.linkedin.com/in/vishal-gawade22/" target="_blank" aria-label="Linkedin">
                             <FaLinkedin />
                         </SocialLink>
-                        <SocialLink href="/" target="_blank" aria-label="Instagram">
+                        <SocialLink href="https://www.instagram.com/vishalgawade22/" target="_blank" aria-label="Instagram">
                             <FaInstagram />
                         </SocialLink>
                     </SocialIcon>

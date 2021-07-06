@@ -28,7 +28,7 @@ const HeroSection = () => {
                         I'm Vishal Gawade
                    </HeroH1>
                     <HeroH1>
-                        A Web Developer
+                        I'm Web Developer
                    </HeroH1>
                     <BtnWrap>
                         <Button
