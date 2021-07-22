@@ -27,9 +27,7 @@ export const AboutH3 = styled.h3`
   margin-bottom: 20px;
   font-family: var(--h1);
 
-  @media screen and (max-width: 480px) {
-    font-size: 1rem;
-  }
+ 
 `;
 
 export const AboutH1 = styled.h1`
