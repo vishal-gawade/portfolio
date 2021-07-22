@@ -108,7 +108,7 @@ export const ImageWrap = styled.img`
 `;
 
 export const WorkH2 = styled.h2`
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   font-family: var(--h1);
 `;
