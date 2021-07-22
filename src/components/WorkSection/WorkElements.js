@@ -27,7 +27,6 @@ export const AboutH3 = styled.h3`
   margin-bottom: 20px;
   font-family: var(--h1);
 
- 
 `;
 
 export const AboutH1 = styled.h1`
@@ -48,8 +47,9 @@ export const AboutH2 = styled.h2`
   font-weight: bold;
   margin-bottom: 40px;
   font-family: var(--h1);
+  text-align: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 1rem;
   }
 `;
@@ -62,13 +62,13 @@ export const CardContainer = styled.div`
   grid-gap: 1.5rem;
   padding-inline: 50px;
 
-  @media screen and (max-width: 1000px) {
+  /* @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding-inline: 20px;
-  }
+  } */
 `;
 
 export const CardWrap = styled.div`
