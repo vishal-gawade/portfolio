@@ -75,7 +75,7 @@ export const CardContainer = styled.div`
 
 export const CardWrap = styled.div`
   height: 500px;
-  width: 450px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -91,12 +91,21 @@ export const CardWrap = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    max-width: 400px;
+  }
 `;
 
 export const ImageWrap = styled.img`
   height: 250px;
   width: 350px;
   margin-bottom: 10px;
+
+   @media screen and (max-width: 768px) {
+    height: 200px;
+    width: 300px;
+  }
 `;
 
 export const WorkH2 = styled.h2`
