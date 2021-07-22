@@ -56,27 +56,28 @@ export const AboutH2 = styled.h2`
 
 export const CardContainer = styled.div`
   display: grid;
-  margin: 0 auto;
+  margin-inline: auto;
   grid-template-columns: 1fr;
   place-items: center;
   grid-gap: 1.5rem;
   padding-inline: 50px;
 
-  /* @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr ;
   }
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding-inline: 20px;
-  } */
+  }
 `;
 
 export const CardWrap = styled.div`
   height: 500px;
+  width: 100%;
   max-width: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
   padding: 15px;
@@ -91,7 +92,7 @@ export const CardWrap = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    max-width: 400px;
+    max-width: 350px;
   }
 `;
 
@@ -102,7 +103,7 @@ export const ImageWrap = styled.img`
 
    @media screen and (max-width: 768px) {
     height: 200px;
-    width: 300px;
+    width: 250px;
   }
 `;
 
