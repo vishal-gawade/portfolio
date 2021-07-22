@@ -5,10 +5,11 @@ export const FooterContainer = styled.div`
 	display: grid;
 	height: 150px;
 	width: 100%;
-	color: #fff;
-	background: #101522;
+	color: var(--white);
+	background: var(--corn);
 	place-items: center;
 	font-size: 16px;
+	font-family: var(--p);
 `;
 
 export const FooterWrap = styled.div`
@@ -23,7 +24,7 @@ export const ScrollToTop = styled.button`
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	color: #fff;
+	color: var(--white);
 	padding: 5px;
 	background: var(--cyan);
 	border: none;
@@ -43,7 +44,7 @@ export const SocialIcon = styled.div`
 `;
 
 export const SocialLink = styled.a`
-	color: #fff;
+	color: var(--white);
 	font-size: 1.5rem;
 	margin-inline: 10px;
 	cursor: pointer;
@@ -53,6 +54,6 @@ export const SocialLink = styled.a`
 `;
 
 export const WebsiteRight = styled.div`
-	color: #fff;
+	color: var(--white);
 	font-size: 1rem;
 `;

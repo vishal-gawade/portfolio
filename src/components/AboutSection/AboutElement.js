@@ -30,10 +30,11 @@ export const TextWrap = styled.div`
 `;
 
 export const AboutH3 = styled.h3`
-	color: #00ced1;
+	color: var(--cyan);
 	font-size: 1.5rem;
 	font-weight: bold;
 	margin-bottom: 20px;
+	font-family: var(--h1);
 `;
 
 export const AboutH1 = styled.h3`
@@ -41,12 +42,14 @@ export const AboutH1 = styled.h3`
 	font-size: 2rem;
 	font-weight: bold;
 	margin-bottom: 20px;
+	font-family: var(--h1);
 `;
 
 export const AboutH2 = styled.h3`
 	color: #000;
 	font-size: 1.5rem;
 	font-weight: bold;
+	font-family: var(--h1);
 `;
 
 export const AboutColumn = styled.div`
@@ -72,6 +75,7 @@ export const InfoH2 = styled.h2`
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: #000;
+	font-family: var(--h1);
 `;
 
 export const InfoP = styled.p`
@@ -79,14 +83,16 @@ export const InfoP = styled.p`
 	color: #000;
 	padding: 3rem;
 	line-height: 1.5rem;
+	word-spacing: 2px;
 	font-weight: 500;
+	font-family: var(--p);
 `;
 
 export const SkillContainer = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
-	grid-gap: 0.5rem;
+	grid-gap: 1rem;
 	padding: 2rem;
 	place-items: center;
 	@media screen and (max-width: 768px) {
@@ -107,7 +113,7 @@ export const SkillWrap = styled.div`
 	color: #000;
 
 	&:hover {
-		transform: scale(1.02);
+		transform: scale(1.05);
 		transition: 0.2s ease-in-out;
 		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 	}
@@ -117,4 +123,5 @@ export const SkillText = styled.h5`
 	z-index: 2;
 	color: gray;
 	padding: 5px;
+	font-family: var(--h1);
 `;

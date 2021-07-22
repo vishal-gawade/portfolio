@@ -19,6 +19,7 @@ export const MainTitle = styled.h1`
 	font-weight: bold;
 	color: #00ced1;
 	margin-block: 50px;
+	font-family: var(--h1);
 `;
 
 export const ContactWrap = styled.div`
@@ -58,6 +59,7 @@ export const Form = styled.form`
 export const FormTitle = styled.h2`
 	margin-block: 10px;
 	color: gray;
+	font-family: var(--h1);
 `;
 
 export const FormInput = styled.input`
@@ -122,12 +124,14 @@ export const AddInfo = styled.h3`
 	color: #060606;
 	font-size: 1rem;
 	padding: 1rem;
+	font-family: var(--h1);
 `;
 
 export const Info = styled.h3`
 	font-size: 1rem;
 	padding: 1rem;
 	color: gray;
+	font-family: var(--p);
 `;
 
 export const AddInfoWrap = styled.div`

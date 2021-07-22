@@ -1,7 +1,5 @@
 import React from 'react';
-import Icon1 from '../../Images/data_report.svg';
-import Icon2 from '../../Images/off_road.svg';
-import Icon3 from '../../Images/secure_data.svg';
+import Icon1 from '../../Images/cointraco.png';
 import { Button } from '../ButtonElements';
 import {
     WorkContainer,
@@ -35,54 +33,21 @@ const Work = () => {
                     <CardWrap>
                         <ImageWrap src={Icon1} alt='img' />
                         <WorkH2>
-                            Crypto Tracker
+                            Cointraco
                         </WorkH2>
                         <WorkP>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Porro, inventore a? Similique voluptatibus doloribus <br />
-                            voluptatem error. Dolorem sed eligendi voluptatibus s <br />
-                            amet fuga reiciendis voluptatem  <br />
+                            Cointraco is cryptocurrency tracker where you 
+                            can add coins to your list and track using price 
+                            chart of days, week, year of coins.  
+                           
                         </WorkP>
                         <BtnWrap>
-                            <Button>
+                            <Button as="a" href='https://cointraco.netlify.app/'>
                                 SEE LIVE
                             </Button>
                         </BtnWrap>
                     </CardWrap>
-                    <CardWrap>
-                        <ImageWrap src={Icon2} />
-                        <WorkH2>
-                            Crypto Tracker
-                        </WorkH2>
-                        <WorkP>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Porro, inventore a? Similique voluptatibus doloribus <br />
-                            voluptatem error. Dolorem sed eligendi voluptatibus s <br />
-                            amet fuga reiciendis voluptatem <br />
-                        </WorkP>
-                        <BtnWrap>
-                            <Button>
-                                SEE LIVE
-                            </Button>
-                        </BtnWrap>
-                    </CardWrap>
-                    <CardWrap>
-                        <ImageWrap src={Icon3} />
-                        <WorkH2>
-                            Crypto Tracker
-                        </WorkH2>
-                        <WorkP>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Porro, inventore a? Similique voluptatibus doloribus <br />
-                            voluptatem error. Dolorem sed eligendi voluptatibus s <br />
-                            amet fuga reiciendis voluptatem <br />
-                        </WorkP>
-                        <BtnWrap>
-                            <Button>
-                                SEE LIVE
-                            </Button>
-                        </BtnWrap>
-                    </CardWrap>
+                   
                 </CardContainer>
             </WorkContainer>
         </>

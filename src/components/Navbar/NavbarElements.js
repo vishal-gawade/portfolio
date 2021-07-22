@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { HiOutlineDownload  } from 'react-icons/hi'
 
 export const Nav = styled.div`
-	background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+	background: ${({ scrollNav }) => (scrollNav ? 'var(--corn)' : 'transparent')};
 	height: 80px;
 	margin-top: -80px;
 	display: flex;
@@ -90,6 +90,7 @@ export const NavLink = styled(ScrollLink)`
 	padding-block: 1.8rem;
 	height: 100%;
 	cursor: pointer;
+	font-family: var(--h1);
 
 	&.active {
 		border-bottom: 3px solid var(--cyan);
@@ -117,7 +118,7 @@ border-radius: 50px;
 border: none;
 outline: none;
 cursor: pointer;
-
+font-family: var(--h1);
 &:hover{
 	background: var(--cyan);
 }

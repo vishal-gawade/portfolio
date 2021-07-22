@@ -1,13 +1,15 @@
 import React from 'react'
 import Video from '../../Videos/hero.mp4'
 import {Button} from '../ButtonElements';
+import '../Animations/animate.css';
+import Typical from 'react-typical';
 import {
     HeroContainer,
     HeroBg,
     VideoBg,
     HeroContent,
     HeroH3,
-    HeroH1,
+    P,
     BtnWrap,
     ArrowDown,
     
@@ -22,14 +24,20 @@ const HeroSection = () => {
                </HeroBg>
                <HeroContent>
                    <HeroH3>
-                       HELLO THERE
+                       Hi I'm Vishal Gawade
                    </HeroH3>
-                    <HeroH1>
-                        I'm Vishal Gawade
-                   </HeroH1>
-                    <HeroH1>
-                        I'm Web Developer
-                   </HeroH1>
+                    <P>I'm a{' '} 
+                    <Typical
+                       loop={Infinity} 
+                       wrapper='b'
+                       steps={[
+                           'developer 💻',
+                           1000,
+                           'designer 🎨',
+                           1000
+                       ]}
+                    />
+                    </P>
                     <BtnWrap>
                         <Button
                             to='about'

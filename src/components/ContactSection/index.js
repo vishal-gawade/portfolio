@@ -31,7 +31,9 @@ export default function ContactUs() {
 		e.target.reset();
 	}
 
+
 	return (
+	
 		<>
 			<ContactContainer id="contact">
 				<MainTitle>CONTACT</MainTitle>
@@ -43,7 +45,7 @@ export default function ContactUs() {
 						</AddInfoWrap>
 						<AddInfoWrap>
 							<AddInfo>EMAIL</AddInfo>
-							<Info>vishalgawade173@gmail.com</Info>
+							<Info>vishalgawade.ce@gmail.com</Info>
 						</AddInfoWrap>
 						<AddInfoWrap>
 							<AddInfo>ADDRESS</AddInfo>
@@ -52,6 +54,7 @@ export default function ContactUs() {
 					</ContactInfoWrap>
 					<FormContent>
 						<Form onSubmit={sendEmail}>
+							
 							<FormTitle>Get in Touch</FormTitle>
 							<FormInput type="text" placeholder="Your Name" name="name" required />
 							<FormInput type="text" placeholder="Subject" name="subject" required />
