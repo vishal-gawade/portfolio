@@ -52,9 +52,13 @@ export const HeroH3 = styled.h1`
 
 export const P = styled.p`
   color: var(--cyan);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: monospace;
   margin-block: 1.5rem;
+
+    @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const BtnWrap = styled.div`
