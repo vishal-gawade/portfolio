@@ -51,7 +51,7 @@ export const HeroH3 = styled.h1`
 `;
 
 export const P = styled.p`
-  color: var(--white);
+  color: var(--cyan);
   font-size: 2rem;
   font-family: monospace;
   margin-block: 1.5rem;
