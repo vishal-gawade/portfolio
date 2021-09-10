@@ -37,10 +37,9 @@ export const FormContent = styled.div`
 
 export const Form = styled.form`
 	width: 100%;
-	max-width: 500px;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	max-width: 400px;
+	display: grid;
+	place-items: center;
 	color: #000;
 	background: #fff;
 	padding-inline: 3rem;
@@ -51,7 +50,7 @@ export const Form = styled.form`
 		border: 2px solid var(--cyan);
 	}
 	@media screen and (max-width: 768px){
-		margin-inline:  3rem;
+		margin-inline:  2rem;
 		padding-block: 1rem;
 	}
 `;
@@ -66,7 +65,7 @@ export const FormInput = styled.input`
 	color: #060606;
 	font-size: 1rem;
 	padding: 0.5rem;
-	margin-block: 1rem;
+	margin-block: .5rem;
 	border: 2px solid grey;
 	background: #f7f7f7;
 	border-radius: 4px;
@@ -95,13 +94,13 @@ export const Textarea = styled.textarea`
 
 export const FormButton = styled.button`
 	color: #fff;
-	width: 100%;
+	width: 60%;
 	font-size: 1rem;
-	padding: 1rem;
+	padding: 10px;
 	cursor: pointer;
 	border-radius: 4px;
 	background: #00ced1;
-	margin-block: 2rem;
+	margin-block: 1rem;
 	border: none;
 
 	&:hover {
